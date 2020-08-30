@@ -16,22 +16,22 @@ describe "CostumeStore" do
     expect(CostumeStore.find_by(location: "19 W 21st St")).to eq(abracadabra)
   end
 
-  it "has a costume inventory" do
-    adventure = CostumeStore.create(
-      costume_inventory: 785
-    )
-    expect(CostumeStore.find_by(costume_inventory: 785)).to eq(adventure)
-  end
+  # it "has a costume inventory" do
+  #   adventure = CostumeStore.create(
+  #     costume_inventory: 785
+  #   )
+  #   expect(CostumeStore.find_by(costume_inventory: 785)).to eq(adventure)
+  # end
 
-  it "has an employees count" do
-    rickys = CostumeStore.create(
-      name: "Ricky’s", 
-      location: "375 Broadway",
-      costume_inventory: 650,
-      num_of_employees: 17
-    )
-    expect(CostumeStore.find_by(num_of_employees: 17)).to eq(rickys)
-  end
+  # it "has an employees count" do
+  #   rickys = CostumeStore.create(
+  #     name: "Ricky’s", 
+  #     location: "375 Broadway",
+  #     costume_inventory: 650,
+  #     num_of_employees: 17
+  #   )
+  #   expect(CostumeStore.find_by(num_of_employees: 17)).to eq(rickys)
+  # end
 
   it "knows if it's still in business or permanently closed" do
     CostumeStore.create(
